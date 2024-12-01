@@ -456,6 +456,7 @@ local function sign_jwe(self, secret_key, jwt_obj)
   local header = jwt_obj.header
   local enc = header.enc
   local alg = header.alg
+  local _
 
   -- remove type
   if header.typ then
